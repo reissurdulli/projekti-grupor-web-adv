@@ -13,5 +13,20 @@
 }
 
 
+#firstName_error{
+    visibility: hidden;
+    color: red;
+}
+
+#lastName_error{
+    visibility: hidden;
+    color: red;
+}
+
+#email_error{
+    visibility: hidden;
+    color: red;
+}
+
 
 

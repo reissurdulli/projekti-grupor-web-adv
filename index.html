@@ -66,70 +66,75 @@
 
 <div class="card-container">
    <div class="card" style="width: 18rem;">
-  <img src="images/barcelona.jpg" class="card-img-top" alt="barcelona">
+  <img src="images/barcelona.jpg" class="card-img-top" alt="barcelona" width="200" height="150">
   <div class="card-body">
     <h5 class="card-title">Barcelona</h5>
     <p class="card-text">Experience the vibrant heart of 
       Catalonia with our exclusive Barcelona Getaway Package. 
      </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Go somewhere</a>
   </div>
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="images/paris.jpg" class="card-img-top" alt="Paris">
+  <img src="images/paris.jpg" class="card-img-top" alt="Paris"  width="200" height="150">
   <div class="card-body">
     <h5 class="card-title">Paris</h5>
     <p class="card-text">Experience the vibrant heart of 
       France with our exclusive Paris Getaway Package. 
      </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Go somewhere</a>
+  </div>
   </div>
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="images/vienna.jpg" class="card-img-top" alt="Vienna">
+  <img src="images/vienna.jpg" class="card-img-top" alt="Vienna" width="200" height="150">
   <div class="card-body">
     <h5 class="card-title">Vienna</h5>
     <p class="card-text">Experience the vibrant heart of 
       Austria with our exclusive Vienna Getaway Package. 
      </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Go somewhere</a>
+  </div>
   </div>
 </div>
 
 
 <div class="card" style="width: 18rem;">
-  <img src="images/berlin.jpg" class="card-img-top" alt="Berlin">
+  <img src="images/berlin.jpg" class="card-img-top" alt="Berlin" width="200" height="150">
   <div class="card-body">
     <h5 class="card-title">Berlin</h5>
     <p class="card-text">Experience the vibrant heart of 
       Germany with our exclusive Berlin Getaway Package. 
      </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Go somewhere</a>
+  </div>
   </div>
 </div>
 
 
 <div class="card" style="width: 18rem;">
-  <img src="images/new york.jpg" class="card-img-top" alt="New york">
+  <img src="images/new york.jpg" class="card-img-top" alt="New york" width="200" height="150">
   <div class="card-body">
     <h5 class="card-title">New york</h5>
     <p class="card-text">Experience the vibrant heart of 
       Usa with our exclusive New york Getaway Package. 
      </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Go somewhere</a>
+  </div>
   </div>
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img src="images/bali.jpg" class="card-img-top" alt="Bali">
+  <img src="images/bali.jpg" class="card-img-top" alt="Bali" width="200" height="150">
   <div class="card-body">
     <h5 class="card-title">Bali</h5>
     <p class="card-text">Experience the vibrant heart of 
       Indonesia with our exclusive Bali Getaway Package. 
      </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Go somewhere</a>
+  </div>
   </div>
 </div>
 </div>
@@ -216,11 +221,59 @@
 
 
 
+<form onsubmit="return validation();" method="POST">
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book Your Trip</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Destination</label>
+            <input type="text" class="form-control" id="destinationInput" placeholder="Destination" readonly>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" placeholder="Your name" id="name">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Your email" id="email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Travel Date</label>
+            <input type="date" class="form-control">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Booking</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
 
 <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<script>
+document.querySelectorAll('.btn-primary').forEach(button => {
+  button.addEventListener('click', event => {
+    const card = event.target.closest('.card');
+    const destination = card.querySelector('.card-title').textContent;
+    document.getElementById('destinationInput').value = destination;
+  });
+});
+</script>
 </body>
 </html>

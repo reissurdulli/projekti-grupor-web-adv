@@ -38,3 +38,57 @@
   overflow-x: auto;   
   padding: 10px;
 }
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px; 
+}
+
+.about-container h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.about-container p{
+  font-family: 'Inter', sans-serif;
+  font-size: 18.4px;
+  line-height: 1.6;
+  margin-bottom: 18.4px;
+  color: #888;
+}
+
+.otherinfo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px; 
+}
+
+.otherinfo h4{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.otherinfo p{
+  font-family: 'Inter', sans-serif;
+  font-size: 18.4px;
+  line-height: 1.6;
+  margin-bottom: 18.4px;
+  color: #888;
+}
+
+.otherinfo li{
+  font-family: 'Inter', sans-serif;
+  font-size: 18.4px;
+  line-height: 0.5;
+  margin-bottom: 18.4px;
+  color: #888;
+}
